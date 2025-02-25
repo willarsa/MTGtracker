@@ -81,3 +81,20 @@ function addPlayer(){
 
     document.body.appendChild(duplicate)
 }
+
+function changeColor(element, color){
+    let container = element.closest('[data-id]')
+    let healthContainer = container.querySelector(`#healthContainer`)
+    
+    if(color === 1){
+        healthContainer.style.backgroundColor = 'rgb(255, 70, 70)'
+    } else if(color === 2){
+        healthContainer.style.backgroundColor = 'rgb(7, 197, 0)'
+    } else if(color === 3) {
+        healthContainer.style.backgroundColor = 'rgb(46, 101, 255)'
+    } else {
+        healthContainer.style.backgroundColor = 'rgb(255, 251, 34)'
+    }
+}
+
+
