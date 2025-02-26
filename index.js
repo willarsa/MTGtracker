@@ -1,6 +1,5 @@
 let playerHealth = [20]
 let playerCount = 1
-let health = 20
 let num = 0;
 
 
@@ -41,10 +40,10 @@ function calculate(element, input){
 
         num = parseInt(sideDisplay.value.slice(0, length-1))
         
-        health += num * (input)
+        playerHealth[dataId-1] += num * (input)
         num = 0
 
-        display.value = parseFloat(health)
+        display.value = parseFloat(playerHealth[dataId-1])
         sideDisplay.value = ""
     }
     else{
@@ -58,9 +57,8 @@ function setHealth(element, input){
     let display = container.querySelector(`#display`)
 
 
-    health = input
-    console.log(parseFloat(health)) //shows as 20
-    display.value = parseFloat(health)
+    playerHealth[dataId-1] = input
+    display.value = parseFloat(playerHealth[dataId-1])
 }
 
 function clearSide(element){
