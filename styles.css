@@ -23,8 +23,8 @@ body{
 
 #addPlayerContainer{
     position: absolute;
-    top: -15px;
-    left: 300px;
+    top: -7px;
+    left: 325px;
     background-color: rgb(124, 124, 124);
     border-radius: 50px;
     margin: 20px;
@@ -111,10 +111,16 @@ button:active{
     border-color: rgb(248, 248, 248);
 }
 
-#title{
+#title-container{
+    background-color: rgb(255, 70, 70);
     font-family: Arial, Helvetica, sans-serif;
     position: absolute;
     top: 0px;
     left: 10px;
-    width: 100%;
+    width: auto;
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 10px
 }
+
